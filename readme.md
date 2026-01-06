@@ -35,8 +35,10 @@ css-art-gallery/
 ## 🛠️ How to Run Locally
 
 1. Clone the repository
+```bash
 
-git clone https://github.com/your-username/css-art-gallery.git
+git clone https://github.com/babul101/css-art-gallery.git
+```
 
 2. Open index.html in your browser
 
