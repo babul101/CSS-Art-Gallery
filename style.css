@@ -105,3 +105,64 @@ body {
     border-radius: 0 0 50px 50px;
     transform: translateX(-50%);
 }
+
+/* Coffee Art */
+
+.coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee .cup {
+    width: 120px;
+    height: 80px;
+    background: #e5e7eb;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    
+}
+
+.coffee .cup::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -25px;
+    width: 30px;
+    height: 40px;
+    border: 6px solid #e5e7eb;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+}
+
+.steam {
+    position: absolute;
+    top: 30px;
+    width: 10px;
+    height: 40px;    
+    border-radius: 50%;
+    background: linear-gradient(to top , transparent, #94a3b8 );
+    animation: steam 2s infinite ease-in-out;
+}
+
+.s1 {
+    left:80px
+}
+.s2 {
+    right: 80px;
+    animation-delay: 0.5s;
+}
+
+@keyframes steam {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
