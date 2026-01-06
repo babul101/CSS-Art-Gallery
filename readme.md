@@ -32,17 +32,16 @@ css-art-gallery/
 └── README.md
 
 
-🛠️ How to Run Locally
+## 🛠️ How to Run Locally
 
 1. Clone the repository
 
 git clone https://github.com/your-username/css-art-gallery.git
 
-
 2. Open index.html in your browser
 
 3. Explore the CSS-only artwork ✨
 
-📜 License
+## 📜 License
 
 This project is open-source and free to use for learning, experimentation, and portfolio purposes.
