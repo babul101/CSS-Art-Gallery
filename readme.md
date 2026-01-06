@@ -30,7 +30,7 @@ css-art-gallery/
 ├── index.html
 ├── styles.css
 └── README.md
-
+```
 
 ## 🛠️ How to Run Locally
 
