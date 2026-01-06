@@ -194,7 +194,34 @@ body {
   background: #22d3ee;
   border-radius: 50%;
   transform: translateX(-50%);
+  box-shadow:
+    0 0 8px #22d3ee,
+    0 0 16px #22d3ee;
+
+  animation: pulse 2s infinite ease-in-out;
 }
+
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 6px #22d3ee,
+      0 0 12px #22d3ee;
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow:
+      0 0 14px #22d3ee,
+      0 0 28px #22d3ee;
+    opacity: 1;
+  }
+  100% {
+    box-shadow:
+      0 0 6px #22d3ee,
+      0 0 12px #22d3ee;
+    opacity: 0.8;
+  }
+}
+
 
 .robot .eye {
   width: 20px;
@@ -203,7 +230,19 @@ body {
   border-radius: 50%;
   display: inline-block;
   margin: 20px;
+  transform-origin: center;
+  animation: blink 4.5s infinite;
 }
+
+@keyframes blink {
+  0%, 92%, 100% {
+    transform: scaleY(1);
+  }
+  94%, 96% {
+    transform: scaleY(0.1);
+  }
+}
+
 
 .robot .mouth {
   width: 80px;
